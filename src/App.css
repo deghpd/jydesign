@@ -319,3 +319,84 @@ html, body {
 .read-the-docs {
   color: #888;
 }
+
+@media (max-width: 768px) {
+  .Mainbox {
+    margin-left: 0;
+    padding: 0 5vw;
+  }
+
+  .countBtn {
+    padding-left: 0;
+    width: 100%;
+    font-size: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .Storecard-container {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .SearchBar {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .Btn-container {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    margin-left: 0;
+    width: 100vw;
+    padding: 10px;
+  }
+
+  .regi-container {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .contactformat {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .selectBox {
+    width: 100%;
+  }
+
+  .base-btn {
+    right: 5vw;
+    bottom: 2vh;
+    font-size: 14px;
+  }
+
+  .galleryInnerWrap {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .galleryImgWrap {
+    width: 90vw;
+    height: auto;
+    flex-direction: column;
+  }
+}
