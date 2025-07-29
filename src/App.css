@@ -109,6 +109,10 @@ html, body {
   border-radius: 5%;
 }
 
+.nav-title-mobile {
+  display: none;
+}
+
 .nav-title {
   margin-left: 0vw;
 }
@@ -156,9 +160,58 @@ html, body {
   font-weight: bold;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1100;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  margin: 4px 0;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+.nav-btn-mobile {
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: 0;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-start;
+  top: 65px;
+  right: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1050;
+}
+
 .signTextBar{
   width:20vw;
 }
+
+.signTextBar-mail{
+  width: 40vw;
+}
+
 
 .contactTitle {
   margin: 25% 10% 0 0;
@@ -238,7 +291,7 @@ html, body {
 }
 
 .selectBox {
-  width: 10vw;
+  width: 8rem;
 }
 
 .base-btn {
@@ -326,6 +379,13 @@ html, body {
     padding: 0 5vw;
   }
 
+  .nav-title-mobile {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 2rem;
+  }
+
   .countBtn {
     padding-left: 0;
     width: 100%;
@@ -351,12 +411,12 @@ html, body {
     justify-content: center;
     gap: 5px;
   }
-
   .navbar-container {
-    flex-direction: column;
-    margin-left: 0;
-    width: 100vw;
-    padding: 10px;
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   .regi-container {
@@ -366,6 +426,15 @@ html, body {
     flex-direction: column;
   }
 
+  .imgContainer {
+    display: none;
+  }
+
+  .fade-in-left-contact {
+    width: 100%;
+    height: auto;
+  }
+  
   .contactformat {
     flex-direction: column;
     width: 90%;
@@ -376,10 +445,12 @@ html, body {
   .form-container {
     width: 100%;
     padding: 10px;
+    align-items: flex-start;
   }
 
-  .selectBox {
-    width: 100%;
+  .contactTitle {
+    margin: 0 0 1rem 3.5rem;
+    font-size: 16px;
   }
 
   .base-btn {

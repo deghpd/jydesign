@@ -4,7 +4,7 @@ export function Contact(){
 
     const [Selected, setSelected] = useState('');
     const handleChange = (e) => {
-        setSelected(e.targer.value);
+        setSelected(e.target.value);
     };
 
     return(
@@ -20,9 +20,9 @@ export function Contact(){
         <label htmlFor="name" className="formtitle">姓名:</label>
         <input type="name" className="signTextBar" required/>
         <label htmlFor="email" className="formtitle">電子信箱:</label>
-        <input type="text" className="signTextBar" required/>
+        <input type="text" className="signTextBar-mail" required/>
         <label htmlFor="email" className="formtitle">確認電子信箱:</label>
-        <input type="text" className="signTextBar" required/>
+        <input type="text" className="signTextBar-mail" required/>
         <label htmlFor="dropdown" className="formtitle">工程類別</label>
         <select id="type" name="type" required className="selectBox">
             <option value="" hidden>請選擇工程類別</option>
