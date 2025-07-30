@@ -17,11 +17,7 @@ export function Home() {
     return(
         <>
     <div className="Mainbox">
-    <div className="header">
-          <div className='countBtn'>
-          超過<CountBtn/>+
-          </div>
-    </div>
+    <div className='countBtn'>超過<CountBtn/>+</div>
     <div className="Storecard-container">
         {StoreArr.map((element, index) => (
           <div

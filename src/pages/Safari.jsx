@@ -8,7 +8,6 @@ export function Safari() {
                 <input className="SearchBar" type="text" placeholder="Type Something Here~"></input>
                 <button className="Search-btn">Search</button>
             </div> */}
-            <form className="form-container">
                 <div className="galleryWrapper">
                     <div className="galleryInnerWrap">
                     <div className="galleryImgWrap">
@@ -21,7 +20,6 @@ export function Safari() {
                     </div>
                     </div>
                 </div>
-            </form>
         </div>
         </>
     )
